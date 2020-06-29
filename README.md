@@ -8,7 +8,7 @@ This is a small challenge found in frontend-mentor. More details inside the dist
 - CSS3
 - SASS
 
-# Steps to rin
+# Steps to run
 
 - Clone the github
 - npm install
