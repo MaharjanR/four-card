@@ -1,2 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
 body {
-  background-color: #d4d4d4; }
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  color: #a3a5ae;
+  font-size: 15px;
+  max-width: 375px;
+  padding: 1rem;
+  margin: 0 auto; }
+
+.container {
+  padding: 0 2rem;
+  overflow: hidden; }
+
+h1,
+h2,
+h3,
+h4 {
+  color: #4c4e61;
+  font-weight: 600;
+  margin: 0.2rem 0; }
+
+main .header {
+  margin: 3rem auto; }
+  main .header h2.light {
+    font-weight: 200; }
+  main .header p {
+    margin: 1rem 0; }
+
+main .cards .card {
+  background: #fff;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-shadow: 0 12px 32px -9px rgba(0, 0, 0, 0.4);
+  border-radius: 5px; }
+  main .cards .card .icon {
+    display: block;
+    margin: 2rem 0 1rem auto;
+    width: 3rem; }
+
+main .cards .cyan {
+  border-top: 3px solid #45d3d3; }
+
+main .cards .red {
+  border-top: 3px solid #ea5353; }
+
+main .cards .orange {
+  border-top: 3px solid #fcaf4a; }
+
+main .cards .blue {
+  border-top: 3px solid #549ef2; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem; }
+
+.attribution a {
+  color: #3e52a3; }
+
+@media (min-width: 1000px) {
+  body {
+    max-width: 1440px;
+    text-align: center; }
+  main .header {
+    width: 560px; }
+  main .cards {
+    display: grid;
+    grid-template: ". card-2 ." "card-1 card-2 card-4" "card-1 card-3 card-4" ". card-3 .";
+    grid-template-columns: minmax(0, 330px) minmax(0, 330px) minmax(0, 330px);
+    grid-template-rows: repeat(4, minmax(1fr, 330px));
+    margin-bottom: 30px;
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center; }
+    main .cards .cyan {
+      grid-area: card-1; }
+    main .cards .red {
+      grid-area: card-2; }
+    main .cards .orange {
+      grid-area: card-3; }
+    main .cards .blue {
+      grid-area: card-4; }
+    main .cards .card {
+      width: 330px;
+      margin: 0 auto; } }
