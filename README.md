@@ -1,6 +1,6 @@
 # Four-card
 
-This is a small challenge found in frontend-mentor. More details inside the dist folder. 
+This is a small challenge to practise and challenge my skill in frontend. More details inside the dist folder readme. 
 
 # Technologies used
 
