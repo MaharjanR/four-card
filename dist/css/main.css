@@ -66,17 +66,19 @@ main .cards .blue {
 @media (min-width: 1000px) {
   body {
     max-width: 1440px;
-    text-align: center; }
+    text-align: center;
+    font-size: 20px; }
   main .header {
     width: 560px; }
   main .cards {
     display: grid;
     grid-template: ". card-2 ." "card-1 card-2 card-4" "card-1 card-3 card-4" ". card-3 .";
-    grid-template-columns: minmax(0, 330px) minmax(0, 330px) minmax(0, 330px);
-    grid-template-rows: repeat(4, minmax(1fr, 330px));
+    grid-template-columns: minmax(0, 420px) minmax(0, 420px) minmax(0, 420px);
+    grid-template-rows: repeat(4, minmax(1fr, 420px));
     margin-bottom: 30px;
     grid-gap: 2rem;
     align-items: center;
+    text-align: start;
     justify-content: center; }
     main .cards .cyan {
       grid-area: card-1; }
@@ -87,5 +89,5 @@ main .cards .blue {
     main .cards .blue {
       grid-area: card-4; }
     main .cards .card {
-      width: 330px;
+      width: 420px;
       margin: 0 auto; } }
